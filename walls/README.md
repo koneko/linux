@@ -1,1 +1,1 @@
-wallpapers, put into ~/Pictures/walls
+wallpapers, put into `~/Pictures/walls`
