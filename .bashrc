@@ -12,7 +12,7 @@ alias grep='grep --color=auto'
 alias vi='nvim'
 alias vim='nvim'
 alias cd..='cd ..'
-alias neofetch='fastfetch'
+alias neofetch='fastfetch --cpu-temp true --gpu-temp true'
 alias copy='xclip -selection clipboard'
 alias screensaver='xset dpms force standby'
 alias discord='discord --enable-blink-features=MiddleClickAutoscroll'
@@ -22,9 +22,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[[ $- == *i* ]] && source /usr/share/blesh/ble.sh # requires blesh from aur
 source /usr/share/doc/pkgfile/command-not-found.bash # requires pkgfile from pacman
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
+
+# Created by `pipx` on 2024-10-02 19:30:31
+export PATH="$PATH:/home/koneko/.local/bin"
+. "/home/koneko/.deno/env"
